@@ -1,27 +1,28 @@
 package main
 
 import (
+	"circle_calculator/helpers"
 	"fmt"
 )
 
 func main() {
-	radius, err := getRadius()
+	radius, err := helpers.GetRadius()
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	query, err := getQuery()
+	query, err := helpers.GetQuery()
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
 
-	calcFunc := getFunction(query)
+	calcFunc := helpers.GetFunction(query)
 	if calcFunc == nil {
 		fmt.Println("Invalid choice. Please enter 1, 2, or 3.")
 		return
 	}
 
-	printResult(radius, calcFunc)
+	helpers.GetPrintResult(radius, calcFunc)
 }

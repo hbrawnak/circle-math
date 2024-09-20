@@ -1,11 +1,11 @@
-package main
+package helpers
 
 import (
 	"errors"
 	"fmt"
 )
 
-func getRadius() (float64, error) {
+func GetRadius() (float64, error) {
 	var radius float64
 	fmt.Println("Enter radius of circle: ")
 	if _, err := fmt.Scan(&radius); err != nil || radius <= 0 {
@@ -14,7 +14,7 @@ func getRadius() (float64, error) {
 	return radius, nil
 }
 
-func getQuery() (int, error) {
+func GetQuery() (int, error) {
 	var query int
 	fmt.Println("Enter choice: \n 1 - Area \n 2 - Perimeter \n 3 - Diameter: ")
 	if _, err := fmt.Scan(&query); err != nil || query < 1 || query > 3 {
