@@ -1,4 +1,4 @@
-# Circle Calculator
+# Circle Math
 
 A simple Go application that calculates the **area**, **perimeter**, or **diameter** of a circle based on the radius provided by the user.
 
@@ -18,15 +18,15 @@ A simple Go application that calculates the **area**, **perimeter**, or **diamet
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/hbrawnak/circle_calculator.git
+   git clone https://github.com/hbrawnak/circle-math.git
    
 2. Navigate to the project directory:
     ```bash
-    cd circle_calculator
+    cd circle-math
    
 3. Initialize Go modules:
     ```bash
-   go mod init circle_calculator
+   go mod init circle-math
 
 4. Run the project
     ```bash

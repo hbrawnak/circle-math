@@ -1,7 +1,7 @@
 package helpers
 
 import (
-	"circle_calculator/calculators"
+	"circle-math/calculators"
 	"fmt"
 )
 
