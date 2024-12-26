@@ -2,7 +2,7 @@ package helpers
 
 import (
 	"bytes"
-	"circle_calculator/calculators"
+	"circle-math/calculators"
 	"fmt"
 	"testing"
 )
